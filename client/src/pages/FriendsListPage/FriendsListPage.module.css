@@ -1,0 +1,272 @@
+.friendsPageContainer {
+    width: 100%;
+    min-height: 810px;
+    max-height: 810px;
+    padding: 45px 50px;
+    border: 1px solid #BEBBBB;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .tabsContainer {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .tab {
+    background: none;
+    border: none;
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #444444;
+    cursor: pointer;
+    padding: 0;
+    transition: all 0.3s ease;
+  }
+  
+  .tab.active {
+    font-size: 36px;
+  }
+  
+  .searchContainer {
+    margin-bottom: 50px;
+  }
+  
+  .searchInputWrapper {
+    position: relative;
+    width: 500px;
+  }
+  
+  .searchInput {
+    width: 100%;
+    padding: 20px;
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #444444;
+    border: 1px solid #BEBBBB;
+    border-radius: 50px;
+    padding-right: 50px;
+  }
+  
+  .searchInput::placeholder {
+    color: #BEBBBB;
+  }
+
+  .searchIcon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 26px;
+    height: 26px;
+    pointer-events: none;
+  }
+  
+  .searchInputWrapper svg {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .friendsList {
+    flex: 1;
+    overflow-y: auto;
+  }
+  
+  .friendItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #BEBBBB;
+  }
+  
+  .friendItem:last-child {
+    border-bottom: none;
+  }
+  
+  .friendInfo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .friendAvatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .friendDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .friendName {
+    display: flex;
+    gap: 4px;
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #444444;
+  }
+  
+  .messageLink {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+  }
+
+  .messageIcon {
+    width: 26px;
+    height: 26px;
+}
+  
+  .messageLink span {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    color: #444444;
+  }
+  
+  .deleteButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.2s ease;
+  }
+
+  .deleteIcon {
+    width: 50px;
+    height: 45px;
+}
+  
+  .deleteButton:hover {
+    opacity: 0.8;
+  }
+  
+  .emptyState {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #BEBBBB;
+    text-align: center;
+  }
+
+  .modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modalContent {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    min-width: 400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.modalTitle {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    color: #444444;
+    margin: 0 0 30px 0;
+    text-align: center;
+}
+
+.modalActions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.modalButton {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 12px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.confirmButton {
+    background-color: #FF6B6B;
+    color: white;
+}
+
+.confirmButton:hover {
+    background-color: #FF5252;
+}
+
+.cancelButton {
+    background-color: #F0F0F0;
+    color: #444444;
+}
+
+.cancelButton:hover {
+    background-color: #E0E0E0;
+}
+
+.actionIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.requestActions {
+  display: flex;
+  gap: 10px;
+}
+
+.actionButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.acceptButton:hover {
+  background-color: rgba(174, 225, 255, 0.1);
+}
+
+.rejectButton:hover {
+  background-color: rgba(255, 107, 107, 0.1);
+}

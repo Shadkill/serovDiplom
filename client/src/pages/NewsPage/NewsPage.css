@@ -1,0 +1,180 @@
+.news-page {
+    display: flex;
+    gap: 30px;
+}
+
+.news-page-main-content {
+    flex: 1;
+}
+
+.create-post-button {
+    width: 390px;
+    background: #FFD3B6;
+    border-radius: 50px;
+    border: none;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.create-post-button:hover {
+    opacity: 0.9;
+}
+
+.create-post-icon {
+    width: 26px;
+    height: 26px;
+}
+
+.create-post-button span {
+    font-family: 'Comfortaa', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #444444;
+}
+
+.posts-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.post {
+    padding: 20px;
+    background: #FFFFFF;
+    border: 1px solid rgba(190, 187, 187, 0.3);
+    border-radius: 12px;
+}
+
+.post-header {
+    display: flex;
+    gap: 15px;
+}
+
+.author-avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.author-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.author-name {
+    display: flex;
+    gap: 5px;
+    font-family: 'Comfortaa', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #444444;
+}
+
+.post-date {
+    font-family: 'Comfortaa', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    color: #BEBBBB;
+}
+
+.post-text {
+    margin-top: 30px;
+    font-family: 'Comfortaa', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #444444;
+}
+
+.post-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.post-actions {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.post-image {
+    margin-top: 20px;
+    width: 750px;
+    height: 364px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.categories-sidebar {
+    width: 238px;
+}
+
+.categories-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.category-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.categories-header h2 {
+    font-family: 'Comfortaa', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #444444;
+}
+
+.categories-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.category-item {
+    width: 238px;
+    background: #FFD3B6;
+    border-radius: 12px;
+    padding: 12px 20px;
+    font-family: 'Comfortaa', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #444444;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.category-item:hover {
+    opacity: 0.9;
+}
+
+.like-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 0;
+}

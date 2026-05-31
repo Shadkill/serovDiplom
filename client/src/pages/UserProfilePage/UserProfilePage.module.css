@@ -1,0 +1,378 @@
+.profileContainer {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .leftSection {
+    flex: 1;
+    max-width: 800px;
+  }
+  
+  .rightSection {
+    width: 300px;
+  }
+  
+  .userInfo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  
+  .userAvatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .userName {
+    margin-left: 30px;
+    display: flex;
+    gap: 10px;
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    color: #444444;
+  }
+  
+  .editProfileButton {
+    margin-left: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+  }
+  
+  .createPostButton {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #FFD3B6;
+    border-radius: 50px;
+    border: none;
+    padding: 25px;
+    cursor: pointer;
+    margin-bottom: 50px;
+  }
+  
+  .createPostButton span {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #444444;
+  }
+  
+  .postsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .post {
+    padding: 20px;
+    border: 1px solid #BEBBBB;
+    border-radius: 20px;
+  }
+  
+  .postHeader {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .authorAvatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .authorInfo {
+    margin-left: 15px;
+  }
+  
+  .authorName {
+    display: flex;
+    gap: 5px;
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #444444;
+  }
+  
+  .postDate {
+    margin-top: 10px;
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    color: #BEBBBB;
+  }
+  
+  .postText {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #444444;
+    margin-bottom: 20px;
+  }
+  
+  .likeButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 0;
+}
+
+.likeButton:hover {
+  background: rgba(255, 211, 182, 0.1);
+}
+
+.likeButton.liked {
+  color: #ff4757;
+}
+
+.postActions {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.postContent {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.postImage {
+  margin-top: 20px;
+  width: 750px;
+  height: 364px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+  
+  /* Стили для модального окна */
+  .modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modalContent {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    width: 600px;
+    max-width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+  
+  .modalTitle {
+    font-family: 'Comfortaa';
+    font-weight: 400;
+    font-size: 24px;
+    color: #444444;
+    margin-bottom: 20px;
+  }
+  
+  .createPostForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .imageUploadArea {
+    border: 2px dashed #BEBBBB;
+    border-radius: 12px;
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: #F9F9F9;
+  }
+  
+  .imageUploadArea.dragging {
+    border-color: #FFD3B6;
+    background: rgba(255, 211, 182, 0.1);
+  }
+  
+  .imageUploadArea.hasImage {
+    border-style: solid;
+    background: white;
+  }
+  
+  .hiddenFileInput {
+    display: none;
+  }
+  
+  .uploadPrompt {
+    text-align: center;
+    color: #666;
+  }
+  
+  .uploadIcon {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .imagePreviewContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .imagePreview {
+    width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+    border-radius: 10px;
+  }
+  
+  .removeImageButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+  }
+  
+  .removeImageButton:hover {
+    background: rgba(0, 0, 0, 0.7);
+  }
+  
+  .postTextArea {
+    width: 100%;
+    min-height: 120px;
+    padding: 15px;
+    border: 1px solid #BEBBBB;
+    border-radius: 12px;
+    font-family: 'Comfortaa';
+    font-size: 16px;
+    resize: none;
+    transition: border-color 0.2s;
+  }
+  
+  .postTextArea:focus {
+    border-color: #FFD3B6;
+    outline: none;
+  }
+  
+  .categoriesDropdown {
+    position: relative;
+  }
+  
+  .dropdownToggle {
+    width: 100%;
+    padding: 12px;
+    background: white;
+    border: 1px solid #BEBBBB;
+    border-radius: 12px;
+    font-family: 'Comfortaa';
+    font-size: 16px;
+    text-align: left;
+    cursor: pointer;
+    transition: border-color 0.2s;
+  }
+  
+  .dropdownToggle:hover {
+    border-color: #FFD3B6;
+  }
+  
+  .dropdownMenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border: 1px solid #BEBBBB;
+    border-radius: 12px;
+    margin-top: 5px;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1;
+  }
+  
+  .categoryOption {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .categoryOption:hover {
+    background: #F9F9F9;
+  }
+  
+  .modalActions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .submitButton,
+  .cancelButton {
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-family: 'Comfortaa';
+    font-size: 16px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+  }
+  
+  .submitButton {
+    background: #FFD3B6;
+    border: none;
+    color: #444444;
+  }
+  
+  .submitButton:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .cancelButton {
+    background: none;
+    border: 1px solid #BEBBBB;
+    color: #444444;
+  }
+  
+  .submitButton:hover:not(:disabled),
+  .cancelButton:hover {
+    opacity: 0.8;
+  }
+  

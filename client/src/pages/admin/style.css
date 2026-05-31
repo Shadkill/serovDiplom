@@ -1,0 +1,71 @@
+.title_admin{
+    font-family: 'Comfortaa';
+}
+.input_auth1{
+    padding: 10px;
+    border-radius: 2vw;
+    border: 1px solid #BEBEBE;
+    margin-bottom: 10px;
+    font-family: 'Comfortaa';
+    font-size: 1vw;
+    width: 15vw;
+    padding: 0.8vw;
+}
+.category_add{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    padding-top: 2vw;
+}
+.btn_auth1{
+    background-color: rgba(255, 211, 182, 1);
+    font-family: 'Comfortaa';
+    font-size: 1vw;
+    color: rgba(68, 68, 68, 1);
+    border: none;
+    width: 10vw;
+    padding: 1vw;
+    border-radius: 2vw;
+    cursor: pointer;
+}
+th{
+    font-family: 'Comfortaa';
+    font-size: 1vw;
+    text-align: left;
+    padding: 10px;
+}
+.inpt{
+    padding: 10px;
+    border-radius: 2vw;
+    border: 1px solid #BEBEBE;
+    font-family: 'Comfortaa';
+    font-size: 1vw;
+    width: 8vw;
+    padding: 0.5vw;
+}
+.btn{
+    background-color: rgba(255, 211, 182, 1);
+    font-family: 'Comfortaa';
+    font-size: 0.8vw;
+    color: rgba(68, 68, 68, 1);
+    border: none;
+    padding: 0.5vw;
+    border-radius: 2vw;
+    cursor: pointer;
+    margin-left: 1vw;
+}
+table{
+    text-align: start;
+    border: 1px solid black;
+    border-radius: 1vw;
+}
+
+td{
+    padding: 1vw;
+}
+th{
+    text-align: center;
+}
+.div_table{
+    padding-top: 3vw;
+}

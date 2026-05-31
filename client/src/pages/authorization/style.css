@@ -1,0 +1,70 @@
+.title_form_top{
+    display: flex;
+    gap: 1vw;
+    font-family: 'Comfortaa';
+    color: rgba(68, 68, 68, 1);
+    font-size: 1.2vw;
+}
+.arrow{
+    width: 5vw;
+    cursor: pointer;
+}
+.input_auth{
+  
+    padding: 10px;
+    border-radius: 2vw;
+    border: 1px solid #BEBEBE;
+    margin-bottom: 10px;
+    font-family: 'Comfortaa';
+    font-size: 1vw;
+    width: 25vw;
+    padding: 0.8vw;
+}
+.input_auth::placeholder{
+    font-size: 1vw;
+}
+.div_input{
+    display: flex;
+    gap: 1.5vw;
+    
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3vw;
+}
+.block_center_register{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 7vw;
+}
+.main_div{
+    padding-left: 12vw;
+    padding-right: 12vw;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+}
+a{
+    text-decoration: none;
+    color: rgba(68, 68, 68, 1);
+}
+.btn_auth{
+    background-color: rgba(255, 211, 182, 1);
+    font-family: 'Comfortaa';
+    font-size: 1vw;
+    color: rgba(68, 68, 68, 1);
+    border: none;
+    width: 10vw;
+    padding: 1vw;
+    border-radius: 2vw;
+    cursor: pointer;
+}
+.categories{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+.div_category{
+    display: flex;
+
+    gap: 1vw;
+}

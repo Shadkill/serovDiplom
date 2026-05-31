@@ -1,0 +1,318 @@
+.chatListPage {
+    display: flex;
+    max-height: 810px;
+    min-height: 810px;
+    width: 100%;
+}
+
+.chatListContainer {
+    flex: 1;
+    border: 1px solid #BEBBBB;
+    border-radius: 20px 0px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+}
+
+.chatListHeader {
+    padding: 45px 92px;
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    color: #444444;
+}
+
+.chatList {
+    padding: 0 20px;
+    overflow-y: auto;
+}
+
+.chatItem {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    gap: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.chatItem:hover {
+    background-color: rgba(174, 225, 255, 0.1);
+}
+
+.chatItem.selected {
+    background-color: rgba(174, 225, 255, 0.2);
+}
+
+.chatAvatar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.chatInfo {
+    flex: 1;
+}
+
+.chatName {
+    display: flex;
+    gap: 4px;
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    color: #444444;
+}
+
+.messageStatusText {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11px;
+    color: #BEBBBB;
+    margin-top: 4px;
+}
+
+.messageStatusIcon {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newMessageIndicator {
+    width: 20px;
+    height: 20px;
+    background: #AEE1FF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.chatDetails {
+    flex: 1;
+    border-top: 1px solid #BEBBBB;
+    border-right: 1px solid #BEBBBB;
+    border-bottom: 1px solid #BEBBBB;
+    border-left: none;
+    border-radius: 0px 20px 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.selectedChatInfo {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #444444;
+}
+
+.noChatSelected {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #BEBBBB;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.chatHeader {
+    padding: 25px;
+    border-bottom: 1px solid #BEBBBB;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+}
+
+.chatProfileImage {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.chatProfileName {
+    display: flex;
+    gap: 5px;
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    color: #444444;
+}
+
+.chatMessagesContainer {
+    padding: 20px 30px;
+    height: calc(100% - 161px);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.messagesList {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+.message {
+    margin-bottom: 15px;
+    display: flex;
+}
+
+.message.other {
+    justify-content: flex-start;
+}
+
+.message.own {
+    justify-content: flex-end;
+}
+
+.messageContent {
+    max-width: 506px;
+    padding: 15px;
+    border: 1px solid #AEE1FF;
+    word-wrap: break-word;
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 16px;
+}
+
+.message.other .messageContent {
+    border-radius: 15px 15px 15px 0;
+}
+
+.message.own .messageContent {
+    border-radius: 15px 15px 0 15px;
+}
+
+.messageInfo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5px;
+    font-size: 12px;
+    color: #BEBBBB;
+}
+
+.deleteMessage {
+    background: none;
+    border: none;
+    color: #BEBBBB;
+    cursor: pointer;
+    padding: 0 5px;
+    font-size: 16px;
+}
+
+.deleteMessage:hover {
+    color: #ff4444;
+}
+
+.messageInputContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.messageInput {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #BEBBBB;
+    border-radius: 15px;
+    font-family: 'Comfortaa';
+    font-size: 14px;
+    outline: none;
+    padding-right: 60px;
+}
+
+.sendButton {
+    position: absolute;
+    right: 15px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modalContent {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    min-width: 400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.modalTitle {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    color: #444444;
+    margin: 0 0 30px 0;
+}
+
+.modalActions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.modalButton {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 12px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.confirmButton {
+    background-color: #FF6B6B;
+    color: white;
+}
+
+.confirmButton:hover {
+    background-color: #FF5252;
+}
+
+.cancelButton {
+    background-color: #F0F0F0;
+    color: #444444;
+}
+
+.cancelButton:hover {
+    background-color: #E0E0E0;
+}

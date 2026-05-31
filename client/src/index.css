@@ -1,0 +1,50 @@
+@font-face {
+  font-family: 'Bounded';
+  src: url('./assets/fonts/Bounded-Variable.ttf') format('truetype');
+  font-weight: 100 900; /* Для variable font */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bounded';
+  src: url('./assets/fonts/Bounded-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bounded';
+  src: url('./assets/fonts/Bounded-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bounded';
+  src: url('./assets/fonts/Bounded-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Comfortaa';
+  src: url('./assets/fonts/Comfortaa.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Глобальные стили */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Bounded', sans-serif;
+}
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+}
