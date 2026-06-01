@@ -4,7 +4,7 @@ const router = express.Router();
 
 const Category = require('../models/category.model');
 const authenticationToken = require('../middlewear/middlewear');
-
+const Channels = require('../models/channel.model')
 
 router.get('/category', async(req,res) =>{
     try{
@@ -37,5 +37,11 @@ router.delete('/deleteCategory/:id', authenticationToken(['admin']), async(req, 
         res.status(500).json({message: 'Ошибка сервера'});
     }
 })
-
+router.get('/channels', async(req,res)=>{
+    try {
+        const allChannels = Channels.find()
+    } catch (error) {
+        
+    }
+})
 module.exports = router;

@@ -14,6 +14,7 @@ import RegistrationPage from './pages/authorization/RegistrationPage';
 import RegisterCode from './pages/authorization/registerCode';
 import Profile from './pages/profilePage/profile';
 import AdminPanel from './pages/admin/adminPanel';
+import Channels from './pages/channels/Channels';
 
 function App() {
     return (
@@ -33,6 +34,8 @@ function App() {
                     <Route path="/registerCode" element={<RegisterCode/>} />
                     <Route path="/:login" element={<Profile/>} />
                     <Route path="/admin_panel" element={<AdminPanel/>} />
+                    <Route path="/channels" element={<Channels/>} />
+
                 </Routes>
             
             </div>
